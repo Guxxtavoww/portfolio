@@ -27,7 +27,7 @@ app.use("/server/testemunhos", testemonialsRoute);
 app.get("/server/tags", cors(), (req, res) => {
     const tags = [ "React JS", "Typescript", "Firebase", "Node JS", "Banco de Dados", "Todos" ];
 
-    res.json(tags)
+    res.json(tags);
 });
 
 app.get("/", (req, res) => res.send("Olá, Heroku!"));

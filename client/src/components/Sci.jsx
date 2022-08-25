@@ -1,10 +1,15 @@
 import React from "react";
 import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
-import { BsLinkedin, BsInstagram } from "react-icons/bs";
+import { BsLinkedin, BsInstagram, BsGithub } from "react-icons/bs";
 
 const Sci = () => {
     return (
         <ul className="app_social">
+            <li className="socialItem">
+                <a href="https://github.com/Guxxtavoww" target="_blank" rel="noopener noreferrer" className="link-sci">
+                    <BsGithub />
+                </a>    
+            </li>
             <li className="socialItem">
                 <a href="https://www.linkedin.com/in/gustavo-augusto-3a513b1b5/" target="_blank" rel="noopener noreferrer" className="link-sci">
                     <BsLinkedin />
