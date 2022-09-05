@@ -50,7 +50,7 @@ const Skills = () => {
                                                 </div>
                                                 <motion.div className="app_skills-xp-works">
                                                     {
-                                                        experience?.works?.map(work => (
+                                                        experience.works?.map(work => (
                                                             <React.Fragment key={work.name}>
                                                                 <motion.div
                                                                     whileInView={{ opacity: [ 0, 1 ] }}
