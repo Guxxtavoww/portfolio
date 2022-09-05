@@ -29,7 +29,7 @@ const About = () => {
                                 transition={{ duration: 0.5, type: "tween" }}
                                 className="app_profile-item"
                             >   
-                                <img src={about.image} alt="Img Perfil" />
+                                <img src={about.image} alt="Img Perfil" loading="lazy" />
                                 <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
                                 <p className="p-text" style={{ marginTop: 10, textAlign: "justify" }}>{about.desc}</p>
                             </motion.div>

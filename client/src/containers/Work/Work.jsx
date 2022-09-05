@@ -62,7 +62,7 @@ const Work = () => {
                             filterWork.map((trab, index) => (
                                 <div className="app_work-item app_flex" key={index}>
                                     <figure className="app_work-img app_flex">
-                                        <img src={trab.image} alt={trab.name} />
+                                        <img src={trab.image} alt={trab.name} loading="lazy" />
                                         <motion.div
                                             whileHover={{ opacity: [ 0, 1 ] }}
                                             transition={{ duration: 0.25, ease: "easeInOut", staggerChildren: 0.5 }}

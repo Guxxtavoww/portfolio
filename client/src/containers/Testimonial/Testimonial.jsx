@@ -21,7 +21,7 @@ const Testimonial = () => {
                 testimonials.length && (
                     <React.Fragment>
                         <div className="app_testimonial-item app_flex">
-                            <img src={testimonials[currentIndex].image} alt="Imagem Testemunho" />
+                            <img src={testimonials[currentIndex].image} alt="Imagem Testemunho" loading="lazy" />
                             <div className="app_testimonial-content">
                                 <p className="p-text">{testimonials[currentIndex].msg}</p>
                                 <div>

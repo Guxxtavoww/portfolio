@@ -34,7 +34,7 @@ const Skills = () => {
                                                 className="app_skills-item app_flex"
                                             >
                                                 <div className="app_flex" style={{ backgroundColor: skill.bgColor ? skill.bgColor : "#edf2f8" }}>
-                                                    <img src={skill.image} alt="Skill Img" />
+                                                    <img src={skill.image} alt="Skill Img" loading="lazy" />
                                                 </div>
                                                 <p className="p-text">{skill.title}</p>
                                             </motion.div>

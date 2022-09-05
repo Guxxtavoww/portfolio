@@ -45,12 +45,17 @@ const Header = () => {
                 transition={{ duration: 0.5, delayChildren: 0.5 }}
                 className="app_header-img"
             >
-                <img src={images.profile} alt="Foto de Perfil" />
+                <img 
+                    src={images.profile}
+                    alt="Foto de Perfil" 
+                    loading="lazy"
+                />
                 <motion.img
                     whileInView={{ scale: [ 0, 1 ] }}
                     transition={{ duration: 1, ease: "easeInOut" }}
                     className="overlay"
                     src={images.circle}
+                    loading="lazy"
                     alt="BG"
                 />
             </motion.div>
@@ -62,7 +67,11 @@ const Header = () => {
                 {
                     imgMap.map((img, index) => (
                         <div className="circle-cmp app_flex" key={index}>
-                            <img src={img} alt="Círculos" />
+                            <img 
+                                src={img} 
+                                alt="Círculos"
+                                loading="lazy"
+                            />
                         </div>
                     ))
                 }
