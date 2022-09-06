@@ -32,9 +32,10 @@ const Work = () => {
             setAnimatedCard([{ y: 0, opacity: 1 }]);
             if(item === "Todos") {
                 setFilterWork(work);
-            } else {
-                setFilterWork(work.filter(work => work.tags.includes(item)));
+                return;
             }
+
+            setFilterWork(work.filter(work => work.tags.includes(item)));
         }, 500);
     };
 
@@ -58,8 +59,7 @@ const Work = () => {
                             transition={{ duration: 0.5, delayChildren: 0.5 }}
                             className="app_work-portfolio"
                         >   
-                        {
-                            filterWork.map((trab, index) => (
+                            {filterWork.map((trab, index) => (
                                 <div className="app_work-item app_flex" key={index}>
                                     <figure className="app_work-img app_flex">
                                         <img src={trab.image} alt={trab.name} loading="lazy" />
@@ -76,34 +76,31 @@ const Work = () => {
                                                     className="app_flex"
                                                 >
                                                     <AiFillEye />
-                                                </motion.div>    
+                                                </motion.div>
                                             </a>
-                                            {
-                                                trab.codeLink && (
-                                                    <a href={trab.codeLink} target="_blank" rel="noreferrer">
-                                                        <motion.div
-                                                            whileInView={{ scale: [ 0, 1 ] }}
-                                                            whileHover={{ scale: [ 1, 0.9 ] }}
-                                                            transition={{ duration: 0.25 }}
-                                                            className="app_flex"
-                                                        >
-                                                            <AiFillGithub />
-                                                        </motion.div>    
-                                                    </a>
-                                                )
-                                            }
+                                            {trab.codeLink && (
+                                                <a href={trab.codeLink} target="_blank" rel="noreferrer">
+                                                    <motion.div
+                                                        whileInView={{ scale: [ 0, 1 ] }}
+                                                        whileHover={{ scale: [ 1, 0.9 ] }}
+                                                        transition={{ duration: 0.25 }}
+                                                        className="app_flex"
+                                                    >
+                                                        <AiFillGithub />
+                                                    </motion.div>
+                                                </a>
+                                            )}
                                         </motion.div>
                                     </figure>
                                     <div className="app_work-content app_flex">
                                         <h4 className="bold-text">{trab.title}</h4>
-                                        <p className="p-text" style={{ marginTop: 10 }}>{trab.desc}</p>   
+                                        <p className="p-text" style={{ marginTop: "10px" }}>{trab.desc}</p>
                                         <div className="app_work-tag app_flex">
                                             <p className="p-text">{trab.tags[0]}</p>
-                                        </div> 
+                                        </div>
                                     </div>
                                 </div>
-                            ))    
-                        }
+                            ))}
                         </motion.div>  
                     </React.Fragment>
                 ) : (
