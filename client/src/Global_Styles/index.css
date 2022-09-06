@@ -19,7 +19,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    outline: none;
+    outline: 0;
     border: none;
     list-style: none;
     scroll-behavior: smooth;
