@@ -97,7 +97,9 @@ const Work = () => {
                                     <h4 className="bold-text">{trab.title}</h4>
                                     <p className="p-text" style={{ marginTop: "10px" }}>{trab.desc}</p>
                                     <div className="app_work-tag app_flex">
-                                        <p className="p-text">{trab.tags[0]}</p>
+                                        <p className="p-text">
+                                            {trab.tags[0]}
+                                        </p>
                                     </div>
                                 </div>
                             </div>
