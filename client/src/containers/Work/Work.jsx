@@ -48,7 +48,11 @@ const Work = () => {
                         <div className="app_work-filter">
                             {
                                 tags.map((item, index) => (
-                                    <div key={index} onClick={() => handleWorkFilter(item)} className={`app_work-filter-item app_flex p-text ${activeFilter === item && "item-active"}`}>
+                                    <div 
+                                        key={index} 
+                                        onClick={() => handleWorkFilter(item)} 
+                                        className={`app_work-filter-item app_flex p-text ${activeFilter === item && "item-active"}`}
+                                    >
                                         {item}
                                     </div>
                                 ))
