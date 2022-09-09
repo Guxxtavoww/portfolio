@@ -10,14 +10,14 @@ const Footer = () => {
         <React.Fragment>
             <h2 className="head-text">Converse Comigo</h2>
             <div className="app_footer-cards">
-                <div className="app_footer-card">
+                <a href="mailto:gustavoaugustocarcontato@gmail.com" className="app_footer-card">
                     <img src={images.email} alt="Email" />
-                    <a href="mailto:gustavoaugustocarcontato@gmail.com" className="p-text">gustavoaugustocarcontato@gmail.com</a>
-                </div>
-                <div className="app_footer-card">
+                    <p className="p-text">gustavoaugustocarcontato@gmail.com</p>
+                </a>
+                <a href="tel:+55 11 98945-9239" className="app_footer-card">
                     <img src={images.mobile} alt="Celular" />
-                    <a href="tel:+55 11 98945-9239" className="p-text">+55 11 98945-9239</a>
-                </div>
+                    <p className="p-text">+55 11 98945-9239</p>
+                </a>
             </div>
             <form className="app_footer-form app_flex" method="POST" action="https://formsubmit.co/gustavoaugustocarcontato@gmail.com">
                 <div className="app_flex">
