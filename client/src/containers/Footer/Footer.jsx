@@ -15,7 +15,7 @@ const Footer = () => {
     const handleChange = e => {
         const { name, value } = e.target;
 
-        setFormData({ ...formData, [name]: value });
+        setFormData(prevState => ({ ...prevState, [name]: value }));
     }
 
     return (
