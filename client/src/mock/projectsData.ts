@@ -21,6 +21,15 @@ const projectsData: IWork[] = [
     codeLink: '',
   },
   {
+    _id: Date.now().toString(),
+    title: 'Aplicativo de controle de finanças',
+    link: 'https://finantial-control.netlify.app/',
+    desc: 'Feito com typescript e custom hooks, esse app persiste dados até quando a página é recarregada',
+    image: 'img/finantial-control-pic.PNG',
+    codeLink: 'https://github.com/Guxxtavoww/financial-control',
+    tags: ['React JS', 'Todos'],
+  },
+  {
     _id: '628808221fe8a5497f7af1b3',
     title: 'Memórias MERN',
     desc: 'Uma aplicação destinada á guardar memórias, e usando material UI.',
